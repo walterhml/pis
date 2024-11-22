@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'ProfileScreen.dart';
 import 'cadastroPet.dart';
 import 'AgendamentoScreen.dart';
 
@@ -165,22 +166,31 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.pets),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: '',
-          ),
-        ],
-        selectedItemColor: Colors.blue,
-      ),
+  items: [
+    BottomNavigationBarItem(
+      icon: Icon(Icons.home),
+      label: '',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.pets),
+      label: '',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.person),
+      label: '', // Ícone do perfil
+    ),
+  ],
+  selectedItemColor: Colors.blue,
+  onTap: (index) {
+    if (index == 2) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => ProfileScreen()),
+      );
+    }
+  },
+),
+
     );
   }
 }
