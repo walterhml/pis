@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import 'ResumoAgendamentoScreen.dart';
 // import 'selecionar_data_horario_screen.dart';
 
 class SelecionarDataHorarioScreen extends StatefulWidget {
@@ -102,14 +104,23 @@ class _SelecionarDataHorarioScreenState extends State<SelecionarDataHorarioScree
             // Advance Button
             Center(
               child: ElevatedButton(
-                onPressed: selectedDay != null && selectedTime != null
-                    ? () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(builder: (context) => NextScreen()), // Replace NextScreen with your target screen
-                        // );
-                      }
-                    : null,
+              onPressed: selectedDay != null && selectedTime != null
+    ? () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => ResumoAgendamentoScreen(
+              petName: "Billy", // Substitua pelo nome real do pet
+              service: "Banho Terapêutico",
+              price: 80.00,
+              schedule: "$selectedDay - $selectedTime",
+              location: "São Paulo\nAnália Franco\nRua teste, 123",
+            ),
+          ),
+        );
+      }
+    : null,
+
                 child: Text(
                   "Avançar",
                   style: TextStyle(fontSize: 18),
