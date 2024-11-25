@@ -47,6 +47,8 @@
 //   }
 // }
 import 'package:flutter/material.dart';
+import 'package:petspa/HistoricoServicosScreen.dart';
+import 'package:petspa/home.dart';
 
 class ProfileScreen extends StatelessWidget {
   @override
@@ -162,6 +164,27 @@ class ProfileScreen extends StatelessWidget {
           BottomNavigationBarItem(icon: Icon(Icons.person), label: ''),
         ],
         selectedItemColor: Colors.blue,
+        onTap: (index) {
+          if (index == 0) {
+            // Navega para a Home (Página Inicial)
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => HomeScreen()),
+            );
+          } else if (index == 1) {
+            // Navega para a página de Histórico de Serviços ao clicar no ícone Pets
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => HistoricoServicosScreen()),
+            );
+          } else if (index == 2) {
+            // Navega para a página de Perfil
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ProfileScreen()),
+            );
+          }
+        },
       ),
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'HistoricoServicosScreen.dart';
 import 'ProfileScreen.dart';
 import 'cadastroPet.dart';
 import 'AgendamentoScreen.dart';
@@ -181,13 +182,20 @@ class HomeScreen extends StatelessWidget {
     ),
   ],
   selectedItemColor: Colors.blue,
-  onTap: (index) {
-    if (index == 2) {
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => ProfileScreen()),
-      );
-    }
+ onTap: (index) {
+          if (index == 1) {
+            // Navega para a página de Histórico de Serviços ao clicar no ícone Pets
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => HistoricoServicosScreen()),
+            );
+          } else if (index == 2) {
+            // Navega para a página de Perfil
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ProfileScreen()),
+            );
+          }
   },
 ),
 
