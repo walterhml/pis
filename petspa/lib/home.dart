@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
               SizedBox(height: 16),
               ListTile(
                 leading: CircleAvatar(
-                  backgroundImage: AssetImage('assets/gato.jpg'), // Imagem do pet
+                  backgroundImage: AssetImage('../assets/gato.jpg'), // Imagem do pet
                 ),
                 title: Text('Billy'),
                 subtitle: Text('Golden Retriever'),
@@ -47,7 +47,7 @@ class HomeScreen extends StatelessWidget {
               ),
               ListTile(
                 leading: CircleAvatar(
-                  backgroundImage: AssetImage('assets/gato.jpg'), // Imagem do pet
+                  backgroundImage: AssetImage('../assets/gato.jpg'), // Imagem do pet
                 ),
                 title: Text('Brandy'),
                 subtitle: Text('Husky Siberiano'),
@@ -103,7 +103,7 @@ class HomeScreen extends StatelessWidget {
                     children: [
                       CircleAvatar(
                         radius: 32,
-                        backgroundImage: AssetImage('assets/gato.jpg'), // Substitua pelo diretório da foto do usuário
+                        backgroundImage: AssetImage('../assets/gato.jpg'), // Substitua pelo diretório da foto do usuário
                       ),
                       SizedBox(width: 16),
                       Column(

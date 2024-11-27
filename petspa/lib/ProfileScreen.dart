@@ -76,7 +76,7 @@ class ProfileScreen extends StatelessWidget {
                     CircleAvatar(
                       radius: 40,
                       backgroundColor: Colors.grey[200],
-                      backgroundImage: AssetImage('assets/gato.jpg'),
+                      backgroundImage: AssetImage('../assets/gato.jpg'),
                     ),
                     SizedBox(height: 8),
                     Text(
