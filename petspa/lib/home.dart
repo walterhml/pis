@@ -465,7 +465,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         final servico = servicos[index];
                         return ServiceCard(
                           title: servico.tipoServico,
-                          imagePath: '../assets/gato.jpg',  // Ajuste de acordo com seu código de imagem
+                          imagePath: '../assets/gato_laranja.png',  // Ajuste de acordo com seu código de imagem
                         );
                       },
                     ),
