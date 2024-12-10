@@ -9,7 +9,7 @@ class HistoricoServicosScreen extends StatelessWidget {
   final Map<String, String> emAndamento = {
     "titulo": "Táxi Dog",
     "descricao": "2 anos y medio",
-    "imagem": "assets/dog.png", // Substitua pelo caminho real da imagem
+    "imagem": "../assets/gato.jpg", // Substitua pelo caminho real da imagem
   };
 
   final List<Map<String, String>> concluidos = [
@@ -48,7 +48,7 @@ class HistoricoServicosScreen extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return ListTile(
                     leading: CircleAvatar(
-                      backgroundImage: AssetImage("assets/dog.png"), // Substitua pela sua imagem
+                      backgroundImage: AssetImage("../assets/gato.jpg"), // Substitua pela sua imagem
                     ),
                     title: Text(agendados[index]["titulo"]!),
                     subtitle: Text(agendados[index]["descricao"]!),
@@ -105,7 +105,7 @@ class HistoricoServicosScreen extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return ListTile(
                     leading: CircleAvatar(
-                      backgroundImage: AssetImage("assets/dog.png"), // Substitua pela sua imagem
+                      backgroundImage: AssetImage("../assets/gato.jpg"), // Substitua pela sua imagem
                     ),
                     title: Text(concluidos[index]["titulo"]!),
                     subtitle: Text(concluidos[index]["descricao"]!),

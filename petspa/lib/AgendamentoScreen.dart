@@ -23,7 +23,7 @@ class AgendamentoScreen extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 40,
-                  backgroundImage: AssetImage("assets/images/dog.jpg"), // Altere o caminho da imagem
+                  backgroundImage: AssetImage("../assets/gato.jpg"), // Altere o caminho da imagem
                 ),
                 SizedBox(width: 16),
                 Column(
