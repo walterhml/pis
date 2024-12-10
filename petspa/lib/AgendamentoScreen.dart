@@ -56,8 +56,8 @@ class AgendamentoScreen extends StatelessWidget {
               spacing: 8.0,
               children: [
                 _buildChip("Banho Terapêutico"),
-                _buildChip("Banho Terapêutico"),
-                _buildChip("Banho Terapêutico"),
+                _buildChip("Banho com Shampoo"),
+                _buildChip("Tosa higienica"),
               ],
             ),
             SizedBox(height: 24),
@@ -71,9 +71,9 @@ class AgendamentoScreen extends StatelessWidget {
             Wrap(
               spacing: 8.0,
               children: [
-                _buildTimeChip("22 out\n09:00 - 10:00", true),
-                _buildTimeChip("22 out\n09:00 - 10:00", false),
-                _buildTimeChip("22 out\n09:00 - 10:00", false),
+                _buildTimeChip("22 out of 2024\n09:00 - 10:00", true),
+                _buildTimeChip("22 out of 2024\n09:00 - 10:00", false),
+                _buildTimeChip("22 out of 2024\n09:00 - 10:00", false),
                 _buildTimeChip("Todas as Datas", false),
               ],
             ),
